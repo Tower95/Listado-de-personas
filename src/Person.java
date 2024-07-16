@@ -1,4 +1,4 @@
-public class Persons {
+public class Person {
   private int id;
   private  String name;
   private String email;
@@ -6,12 +6,12 @@ public class Persons {
   private static int numeroDePerosnas = 0;
 
   // Constructors
-  public Persons (){
+  public Person(){
     this.id = ++numeroDePerosnas;
   }
 
   // Constructor Overload
-  public Persons (String name, String email, String tel){
+  public Person(String name, String email, String tel){
     this();
     this.name = name;
     this.email = email;
@@ -66,7 +66,7 @@ public class Persons {
   }
 
   public static void main(String[] args) {
-   Persons person = new Persons("Ismael", "torrestmi3@gmail.com", "55563122812");
+   Person person = new Person("Ismael", "torrestmi3@gmail.com", "55563122812");
     System.out.println(person);
   }
 }
